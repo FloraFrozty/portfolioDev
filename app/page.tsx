@@ -1,8 +1,12 @@
+'use client';
+import { useEffect } from 'react';
 import Image from "next/image";
 import Link from "next/link";
 import { Instagram, Facebook, Twitter, Twitch, Send, MoveUpRight } from "lucide-react";
+import { animate, cubicBezier, splitText, stagger } from 'animejs';
 
 export default function Home() {
+
   return (
     <div>
       <div className="flex h-screen items-baseline-last justify-center w-full bg-[url(/home/IMG_7166.PNG)] bg-center bg-cover">
