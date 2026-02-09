@@ -132,7 +132,6 @@ export default function Home() {
             <div className="pb-4">
               <h1 className="text-3xl lg:text-4xl xl:text-5xl font-semibold xl:font-medium text-black">FloraFrozty💜✨</h1>
               <p className="text-xs text-black">Alias: Frozty / เด็กแดกหนม</p>
-              <p className="text-xs text-black">OCs: Kato「かと」/ Gaji (가지)</p>
             </div>
             <span className="flex flex-wrap w-full space-x-2 gap-y-2 pb-4">
                 <p className="text-black px-4 py-1 bg-amber-300 rounded-2xl">Artist</p>
@@ -141,13 +140,10 @@ export default function Home() {
                 <p className="text-black px-4 py-1 bg-violet-300 rounded-2xl">Designer</p>
                 <p className="text-black px-4 py-1 bg-sky-300 rounded-2xl">Gamer</p>
                 <p className="text-black px-4 py-1 bg-teal-300 rounded-2xl">Asthetics</p>
-                <p className="text-black px-4 py-1 bg-green-300 rounded-2xl">BADDIE!</p>
             </span>
-            <div className="grid gap-y-2 pb-4">
-              <p className="text-black">Haii! My name is Frozty, nice to meet yall!!</p>
-              <p className="text-black">I like eating. Will literally go to almost any buffets if got invited. (Not w/ strangers ofc, so text me first lmao)</p>
-              <p className="text-black">I am also a Baddie! &gt;3&lt;</p>
-              <p className="text-black">I speak TH/EN, and I don't bite so just hit me. I mean feel free to DM xD</p>
+            <div className="pb-4">
+              <p className="text-black">Me like eating. Will literally go to almost any buffets if got invited. (Not w/ strangers ofc, so text me first lmao)</p>
+              <p className="text-black">I speak TH/EN, and I don't bite so just hit me. I mean feel free to DM lmao</p>
             </div>
           </div>
           <div className="flex flex-wrap space-x-4 space-y-2 pb-8">
@@ -224,7 +220,7 @@ export default function Home() {
           <div className="grid gap-y-4 pb-8">
             <h4 className="text-sm font-semibold text-black">SHIKISHI 🖌️</h4>
             <p className="text-black text-xs">* Shaded icon, or portrait. Price ranges from $45+, varying on character designs.</p>
-            {/* <div className="flex gap-2 md:gap-4">
+            <div className="flex gap-2 md:gap-4">
               <div ref={addScrollImgRef} className="relative w-1/2 h-auto aspect-square">
                 <Image
                 className="object-cover rounded-2xl" 
@@ -235,7 +231,7 @@ export default function Home() {
                 className="object-cover rounded-2xl" 
                 src="/home/shikishi/boreum.png" alt="" fill />
               </div>
-            </div> */}
+            </div>
             <div className="flex gap-2 md:gap-4">
               <div ref={addScrollImgRef} className="relative w-1/2 h-auto aspect-square">
                 <Image
