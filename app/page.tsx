@@ -230,7 +230,19 @@ export default function Home() {
           <div className="grid gap-y-4 pb-8">
             <h4 className="text-sm font-semibold text-black">SHIKISHI 🖌️</h4>
             <p className="text-black text-xs">* Shaded icon, or portrait. Price ranges from $45+, varying on character designs.</p>
-            {/* <div className="flex gap-2 md:gap-4">
+            <div className="flex gap-2 md:gap-4">
+              <div ref={addScrollImgRef} className="relative w-1/2 h-auto aspect-square">
+                <Image
+                className="object-cover rounded-2xl" 
+                src="/home/shikishi/dir.png" alt="" fill />
+              </div>
+              <div ref={addScrollImgRef} className="relative w-1/2 h-auto">
+                <Image
+                className="object-cover rounded-2xl" 
+                src="/home/shikishi/amber.png" alt="" fill />
+              </div>
+            </div>
+            <div className="flex gap-2 md:gap-4">
               <div ref={addScrollImgRef} className="relative w-1/2 h-auto aspect-square">
                 <Image
                 className="object-cover rounded-2xl" 
@@ -241,7 +253,7 @@ export default function Home() {
                 className="object-cover rounded-2xl" 
                 src="/home/shikishi/boreum.png" alt="" fill />
               </div>
-            </div> */}
+            </div>
             <div className="flex gap-2 md:gap-4">
               <div ref={addScrollImgRef} className="relative w-1/2 h-auto aspect-square">
                 <Image
