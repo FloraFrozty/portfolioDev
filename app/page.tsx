@@ -2,8 +2,8 @@
 import { useEffect, useRef } from 'react';
 import Image from "next/image";
 import Link from "next/link";
-import { Instagram, Facebook, Twitter, Twitch, Send, MoveUpRight } from "lucide-react";
 import { animate, cubicBezier, splitText, stagger, createTimeline, Scope, createScope } from 'animejs';
+import { FacebookLogoIcon, TwitchLogoIcon, XLogoIcon, TelegramLogoIcon, InstagramLogoIcon, ArrowSquareOutIcon } from "@phosphor-icons/react";
 
 export default function Home() {
 
@@ -104,19 +104,19 @@ export default function Home() {
           </div>
           <div ref={iconsRef} className="flex items-center justify-center space-x-4">
             <Link href="https://www.facebook.com/florafrozty" target="_blank">
-              <Facebook className="hover:scale-110 hover:text-neutral-400 text-white cursor-pointer" />
+              <FacebookLogoIcon size={32} className="hover:scale-110 hover:text-neutral-400 text-white cursor-pointer" />
             </Link>
             <Link href="https://x.com/florafrozty" target="_blank">
-              <Twitter className="hover:scale-110 hover:text-neutral-400 text-white cursor-pointer" />
+              <XLogoIcon size={32} className="hover:scale-110 hover:text-neutral-400 text-white cursor-pointer" />
             </Link>
             <Link href="https://www.twitch.tv/itzflorafrozty" target="_blank">
-              <Twitch className="hover:scale-110 hover:text-neutral-400 text-white cursor-pointer" />
+              <TwitchLogoIcon size={32} className="hover:scale-110 hover:text-neutral-400 text-white cursor-pointer" />
             </Link>
             <Link href="https://t.me/florafrozty" target="_blank">
-              <Send className="hover:scale-110 hover:text-neutral-400 text-white cursor-pointer" />
+              <TelegramLogoIcon size={32} className="hover:scale-110 hover:text-neutral-400 text-white cursor-pointer" />
             </Link>
             <Link href="https://www.instagram.com/florafrozty?igsh=ZnkyNDNkOHFoNGhv" target="_blank">
-              <Instagram className="hover:scale-110 hover:text-neutral-400 text-white cursor-pointer" />
+              <InstagramLogoIcon size={32} className="hover:scale-110 hover:text-neutral-400 text-white cursor-pointer" />
             </Link>
           </div>
         </div>
@@ -152,31 +152,31 @@ export default function Home() {
           </div>
           <div className="flex flex-wrap space-x-4 space-y-2 pb-8">
             <Link href="https://docs.google.com/document/d/1-Ev9VI-2RmE26RWO4Ky3FllsumAzUu3vBh-Nd0naagg/edit?usp=sharing" target="_blank">
-              <button className="flex text-teal-600 text-xs font-semibold underline hover:text-teal-800 cursor-pointer">
-                COMMISSION INFO<MoveUpRight className="w-3"/>
+              <button className="flex gap-1 text-teal-600 text-xs font-semibold underline hover:text-teal-800 cursor-pointer">
+                COMMISSION INFO <ArrowSquareOutIcon className="text-lg"/>
               </button>
             </Link>
             <Link href="https://trello.com/b/aNozGRmU" target="_blank">
-              <button className="flex text-teal-600 text-xs font-semibold underline hover:text-teal-800 cursor-pointer">
-                COMMISSION QUEUE (TRELLO)<MoveUpRight className="w-3"/>
+              <button className="flex gap-1 text-teal-600 text-xs font-semibold underline hover:text-teal-800 cursor-pointer">
+                COMMISSION QUEUE (TRELLO) <ArrowSquareOutIcon className="text-lg" />
               </button>
             </Link>
           </div>
           <div className="flex items-start space-x-4">
             <Link href="https://www.facebook.com/florafrozty" target="_blank">
-              <Facebook className="text-black hover:scale-110 hover:text-neutral-400 cursor-pointer" />
+              <FacebookLogoIcon size={32} className="text-black hover:scale-110 hover:text-neutral-400 cursor-pointer" />
             </Link>
             <Link href="https://x.com/florafrozty" target="_blank">
-              <Twitter className="text-black hover:scale-110 hover:text-neutral-400 cursor-pointer" />
+              <XLogoIcon size={32} className="text-black hover:scale-110 hover:text-neutral-400 cursor-pointer" />
             </Link>
             <Link href="https://www.twitch.tv/itzflorafrozty" target="_blank">
-              <Twitch className="text-black hover:scale-110 hover:text-neutral-400 cursor-pointer" />
+              <TwitchLogoIcon size={32} className="text-black hover:scale-110 hover:text-neutral-400 cursor-pointer" />
             </Link>
             <Link href="https://t.me/florafrozty" target="_blank">
-              <Send className="text-black hover:scale-110 hover:text-neutral-400 cursor-pointer" />
+              <TelegramLogoIcon size={32} className="text-black hover:scale-110 hover:text-neutral-400 cursor-pointer" />
             </Link>
             <Link href="https://www.instagram.com/florafrozty?igsh=ZnkyNDNkOHFoNGhv" target="_blank">
-              <Instagram className="text-black hover:scale-110 hover:text-neutral-400 cursor-pointer" />
+              <InstagramLogoIcon size={32} className="text-black hover:scale-110 hover:text-neutral-400 cursor-pointer" />
             </Link>
           </div>
         </div>
@@ -230,6 +230,18 @@ export default function Home() {
           <div className="grid gap-y-4 pb-8">
             <h4 className="text-sm font-semibold text-black">SHIKISHI 🖌️</h4>
             <p className="text-black text-xs">* Shaded icon, or portrait. Price ranges from $45+, varying on character designs.</p>
+            <div className="flex gap-2 md:gap-4">
+              <div ref={addScrollImgRef} className="relative w-1/2 h-auto aspect-square">
+                <Image
+                className="object-cover rounded-2xl" 
+                src="/home/shikishi/aosa.png" alt="" fill />
+              </div>
+              <div ref={addScrollImgRef} className="relative w-1/2 h-auto">
+                <Image
+                className="object-cover rounded-2xl" 
+                src="/home/shikishi/shinyeong.png" alt="" fill />
+              </div>
+            </div>
             <div className="flex gap-2 md:gap-4">
               <div ref={addScrollImgRef} className="relative w-1/2 h-auto aspect-square">
                 <Image
@@ -294,7 +306,7 @@ export default function Home() {
                     <path d="M27,5H5c-1.657,0-3,1.343-3,3v1c0-1.657,1.343-3,3-3H27c1.657,0,3,1.343,3,3v-1c0-1.657-1.343-3-3-3Z" fill="#fff" opacity=".2"></path>
                 </svg>
                 <span>
-                  <h5 className="text-black text-xl">Thaitails 2026 ✔️</h5>
+                  <h5 className="text-black text-xl">Thaitails 03/26 ✔️</h5>
                   <p className="text-black text-xs">Bangkok, Thailand</p>
                 </span>
               </div>
@@ -321,7 +333,7 @@ export default function Home() {
                   <path d="M27,5H5c-1.657,0-3,1.343-3,3v1c0-1.657,1.343-3,3-3H27c1.657,0,3,1.343,3,3v-1c0-1.657-1.343-3-3-3Z" fill="#fff" opacity=".2"></path>
                 </svg>
                 <span>
-                  <h5 className="text-black text-xl">FurstClass APR26 🕖</h5>
+                  <h5 className="text-black text-xl">FurstClass 04/26 ✔️</h5>
                   <p className="text-black text-xs">Seoul, South Korea</p>
                 </span>
               </div>
@@ -334,7 +346,7 @@ export default function Home() {
                   <circle cx="16" cy="16" r="6" fill="#ae232f"></circle><path d="M27,5H5c-1.657,0-3,1.343-3,3v1c0-1.657,1.343-3,3-3H27c1.657,0,3,1.343,3,3v-1c0-1.657-1.343-3-3-3Z" fill="#fff" opacity=".2"></path>
                 </svg>
                 <span>
-                  <h5 className="text-black text-xl">OFFF 2026 🕖</h5>
+                  <h5 className="text-black text-xl">OFFF 08/26 🕖</h5>
                   <p className="text-black text-xs">Osaka, Japan</p>
                 </span>
               </div>
@@ -346,7 +358,7 @@ export default function Home() {
                   <path d="M27,5H5c-1.657,0-3,1.343-3,3v1c0-1.657,1.343-3,3-3H27c1.657,0,3,1.343,3,3v-1c0-1.657-1.343-3-3-3Z" fill="#fff" opacity=".2"></path>
                 </svg>
                 <span>
-                  <h5 className="text-black text-xl">PAWAI 2026 🕖</h5>
+                  <h5 className="text-black text-xl">PAWAI 10/26 🕖</h5>
                   <p className="text-black text-xs">Bali, Indonesia</p>
                 </span>
               </div>
